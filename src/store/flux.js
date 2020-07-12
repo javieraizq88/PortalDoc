@@ -4,6 +4,14 @@ const getState = ({ getStore, getActions, setStore }) => {
         },
         
         actions: {
+            isAuthenticated: () => {
+                if (sessionStorage.getItem('currentUser')) {
+                    setStore({
+                        currentUser: JSON.parse(sessionStorage.getItem('currentUser')),
+                        isAuthenticated: sessionStorage.getItem('isAuthenticated')
+                    })
+                }
+            },
         }
     }
 }
