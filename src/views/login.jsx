@@ -86,7 +86,7 @@ const Login = props => {
 
                         </form>
 
-                        <Link to="/request_password">
+                        <Link to="/reset_password">
                             <small>Olvidaste tu contraseña?</small>
                         </Link >
 

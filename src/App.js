@@ -8,6 +8,7 @@ import Registrar from './views/registrar';
 import Login from './views/login';
 import Perfil from './views/perfil';
 import Especialidad from './views/medicos';
+import ResetPassw from './views/resetPassw';
 
 const App = props => {
    
@@ -21,7 +22,7 @@ const App = props => {
           <Route exact path='/login' component={Login}  /> 
           <Route exact path='/perfil' component={Perfil}  /> 
           <Route exact path='/medicos' component={Especialidad}  /> 
-          <Route exact path='/request_password' component={Especialidad}  /> 
+          <Route exact path='/reset_password' component={ResetPassw}  /> 
         </Switch>
       </BrowserRouter>
     </>
