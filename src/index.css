@@ -1,3 +1,7 @@
+
+
+/* Navbar */
+
 #logo{
   width: 3.5%;
   height: 3.5%;
@@ -10,6 +14,7 @@
 
 .nav-link{
   color: black !important;
+  border-right: black double ;
 }
 
 nav a{
@@ -19,9 +24,24 @@ nav a{
 }
 
 nav li{
-  padding-left: 20px;
+  width: 10em;
+  text-align: center;
 }
 
 nav a:hover{
-background: rgb(24, 226, 125);
+  background: rgba(253, 255, 255, 0.932);
+  color: black;
 }
+
+
+
+#banner{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 1%;
+}
+
+#carrusel-3 h1{
+  color: black !important;
+  }
+
