@@ -25,13 +25,19 @@ const Navbar = props => {
                     <Link className="nav-link " to="/">Home<span className="sr-only">(current)</span></Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/register">Registrarme</Link>
+                    <Link className="nav-link" to="/registrar">Registrarme</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/services">Servicios</Link>
+                    <Link className="nav-link" to="/login">Ingresar</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link border" to="/projects">Projectos</Link>
+                    <Link className="nav-link " to="/perfil">Mi Perfíl</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link " to="/medicos">Médicos</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link border " to="#">Cerrar sesión</Link>
                 </li>
                 {/* <li className="nav-item">
                     <Link className="nav-link" to="/contact">Contacto</Link>

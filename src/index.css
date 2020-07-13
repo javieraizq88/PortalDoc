@@ -45,3 +45,21 @@ nav a:hover{
   color: black !important;
   }
 
+/* lista medicos */
+
+#dropdown-especialidad,
+#dropdown-prevision{
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-bottom: 4%;
+}
+
+
+.container img{
+  border-radius: 5%;
+}
+
+#lista-docs{
+  padding-left: 20px;
+  width: 99%;
+}
