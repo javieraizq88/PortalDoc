@@ -21,6 +21,7 @@ const App = props => {
           <Route exact path='/login' component={Login}  /> 
           <Route exact path='/perfil' component={Perfil}  /> 
           <Route exact path='/medicos' component={Especialidad}  /> 
+          <Route exact path='/request_password' component={Especialidad}  /> 
         </Switch>
       </BrowserRouter>
     </>
