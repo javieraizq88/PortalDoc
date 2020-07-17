@@ -4,7 +4,12 @@ const getState = ({ getStore, getActions, setStore }) => {
             username: null,
             currentUser: null,
             isAuthenticated: false,
+            email: null,
+            password: null, 
             role: null, 
+            error: null,
+
+            
         },
         
         actions: {
@@ -58,6 +63,37 @@ const getState = ({ getStore, getActions, setStore }) => {
                     })
             },
 
+            getConfirmation: () => {
+                const store = getStore()
+                const data = {
+                    email: store.email
+                }
+                if(store.role == null){
+                    alert('Tienes que escoger el tipo de cuenta')
+                }
+                fetch(store.path + '/reset_password/'+store.role, {
+                    method: 'POST',
+                    body: JSON.stringify(data),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                        if (data.success) {
+                            setStore({
+                                email_confirm_success: data.success
+                            })
+                        } else {
+                            alert(data.msg)
+                            setStore({
+                                email_confirm_msg: data.msg,
+                            })
+                        }
+                    })
+            },
+
+            
         }
     }
 }

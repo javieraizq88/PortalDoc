@@ -50,7 +50,8 @@ const Login = props => {
                             </div>
 
                             <div className="form-check" >
-                                <input className="form-check-input"
+                                <input
+                                    className="form-check-input"
                                     type="radio"
                                     name="role"
                                     id="exampleRadios1"
